@@ -9,7 +9,7 @@ main =
 
 
 shrinkText max text =
-    if String.length text <= max then
+    if max < 0 || String.length text <= max then
         text
 
     else
